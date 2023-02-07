@@ -16,60 +16,78 @@
 </head>
 
 <body>
-    <wrapper>
-        <container>
-            <main>
+    <wrapper class="l-wrapper">
+        <container class="l-container">
+            <main class="l-main"> <!--メイン部分-->
+                <header class="l-header"> <!--メイン内ヘッダー部分-->
 
+                </header>
             </main>
-            <aside>
-                <div class="inner">
-                    <h2>
-                        Menu
-                    </h2>
-                    <section class="burger">
-                        <h3>バーガー</h3>
-                        <ul>
-                            <li>ハンバーガー</li>
-                            <li>チーズバーガー</li>
-                            <li>テリヤキバーガー</li>
-                            <li>アボガドバーガー</li>
-                            <li>フィッシュバーガー</li>
-                            <li>ベーコンバーガー</li>
-                            <li>チキンバーガー</li>
-                        </ul>
+            <aside class="l-sidebar p-sidebar"> <!--サイドバー部分-->
+                <div class="l-sidebar__inner">
+                    <section class="p-sidebar__title">
+                        <h2>
+                            Menu
+                        </h2>
                     </section>
-                    <section class="side">
-                        <h3>サイド</h3>
-                        <ul>
-                            <li>ポテト</li>
-                            <li>サラダ</li>
-                            <li>ナゲット</li>
-                            <li>コーン</li>
-                        </ul>
+                    <section class="p-sidebar__burger">
+                        <div class="p-sidebar__burger--title">
+                            <h3>バーガー</h3>
+                        </div>
+                        <div class="p-sidebar__burger--list">
+                            <ul>
+                                <li>ハンバーガー</li>
+                                <li>チーズバーガー</li>
+                                <li>テリヤキバーガー</li>
+                                <li>アボガドバーガー</li>
+                                <li>フィッシュバーガー</li>
+                                <li>ベーコンバーガー</li>
+                                <li>チキンバーガー</li>
+                            </ul>
+                        </div>
                     </section>
-                    <section class="drink">
-                        <h3>ドリンク</h3>
-                        <ul>
-                            <li>コーラ</li>
-                            <li>ファンタ</li>
-                            <li>オレンジ</li>
-                            <li>アップル</li>
-                            <li>紅茶（Ice/Hot）</li>
-                            <li>コーヒー（Ice/Hot）</li>
-                        </ul>
+                    <section class="p-sidebar__side">
+                        <div class="p-sidebar__side--title">
+                            <h3>サイド</h3>
+                        </div>
+                        <div class="p-sidebar__side--list">
+                            <ul>
+                                <li>ポテト</li>
+                                <li>サラダ</li>
+                                <li>ナゲット</li>
+                                <li>コーン</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="p-sidebar__drink">
+                        <div class="p-sidebar__drink--title">
+                            <h3>ドリンク</h3>
+                        </div>
+                        <div class="p-sidebar__drink--list">
+                            <ul>
+                                <li>コーラ</li>
+                                <li>ファンタ</li>
+                                <li>オレンジ</li>
+                                <li>アップル</li>
+                                <li>紅茶（Ice/Hot）</li>
+                                <li>コーヒー（Ice/Hot）</li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </aside>
         </container>
-        <footer>
-            <div class="inner">ƒ
-                <nav>
+        <footer class="l-footer"> <!--フッター部分-->
+            <div class="l-footer__inner">
+                <nav class="l-footer__inner--nav">
                     <ul>
                         <li><a>ショップ情報</a></li>
                         <li><a>ヒストリー</a></li>
                     </ul>
                 </nav>
-                <small>Copyright: RaiseTech</small>
+                <div class="l-footer__inner--copyright">
+                    <small>Copyright: RaiseTech</small>
+                </div>
             </div>
         </footer>
     </wrapper>
