@@ -1,5 +1,12 @@
 .l-main {
-    &-content {}
+    background-color: coral;
+    width: 70%;
 
-    &-header {}
+    &-content {
+        background-color: cornflowerblue;
+    }
+
+    &-header {
+        background-color: chartreuse;
+    }
 }

@@ -10,10 +10,11 @@
 @use './foundation/variable';
 
 // layout---------------------------------------------
-@use './layout/foot';
-@use './layout/header';
+@use './layout/wrapper';
+@use './layout/container';
 @use './layout/main';
 @use './layout/sidebar';
+@use './layout/footer';
 
 // object---------------------------------------------
 /* component */
@@ -22,7 +23,7 @@
 @use './object/component/title';
 
 /* project */
-@use './object/project/about';
+@use './object/project/menu';
 @use './object/project/archive';
 @use './object/project/blog';
 @use './object/project/front';
