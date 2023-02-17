@@ -1,3 +1,39 @@
+.l-wrapper {
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.l-container {
+  background-color: bisque;
+  display: flex;
+}
+
+.l-main {
+  background-color: coral;
+  width: 70%;
+}
+.l-main-content {
+  background-color: cornflowerblue;
+  width: 70%;
+}
+.l-main-header {
+  background-color: chartreuse;
+  width: 70%;
+}
+
+.l-sidebar {
+  background-color: darkblue;
+  width: 30%;
+}
+.l-sidebar__inner {
+  background-color: darkseagreen;
+  width: 90%;
+}
+
+.l-footer {
+  background-color: crimson;
+  width: 100%;
+}
 /* component */
 /* project */
 /*# sourceMappingURL=style.css.map */

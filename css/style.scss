@@ -10,20 +10,20 @@
 @use './foundation/variable';
 
 // layout---------------------------------------------
-@use './layout/wrapper';
-@use './layout/container';
-@use './layout/main';
-@use './layout/sidebar';
-@use './layout/footer';
+@use './layout/_wrapper';
+@use './layout/_container';
+@use './layout/_main';
+@use './layout/_sidebar';
+@use './layout/_footer';
 
 // object---------------------------------------------
 /* component */
-@use './object/component/footer';
+@use './object/component/foot';
 @use './object/component/nav';
 @use './object/component/title';
 
 /* project */
-@use './object/project/menu';
+@use './object/project/_menu';
 @use './object/project/archive';
 @use './object/project/blog';
 @use './object/project/front';
