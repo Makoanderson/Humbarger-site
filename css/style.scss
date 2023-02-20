@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 // foundation------------------------------------------
-@forward "./foundation/_index";
+@forward "./foundation/*";
 
 // layout----------------------------------------------
-@use "./layout/_index";
+@use "./layout/*";
 
 // object---------------------------------------------
-@forward "./object/_index";
+@forward "./object/*";
