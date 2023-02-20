@@ -1,0 +1,10 @@
+//フッター関連
+@mixin footerNav {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+@mixin footerCopy {
+    font-size: 14px;
+    color: #ffffff;
+}
