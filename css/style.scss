@@ -1,32 +1,10 @@
 @charset "UTF-8";
 
 // foundation------------------------------------------
-@use './foundation/base';
-@use './foundation/color';
-@use './foundation/font';
-@use './foundation/function';
-@use './foundation/_mixin';
-@use './foundation/reset';
-@use './foundation/variable';
+@forward "./foundation/_index";
 
-// layout---------------------------------------------
-@use './layout/_wrapper';
-@use './layout/_container';
-@use './layout/_main';
-@use './layout/_sidebar';
-@use './layout/_footer';
+// layout----------------------------------------------
+@use "./layout/_index";
 
 // object---------------------------------------------
-/* component */
-@use './object/component/foot';
-@use './object/component/nav';
-@use './object/component/title';
-
-/* project */
-@use './object/project/_menu';
-@use './object/project/archive';
-@use './object/project/blog';
-@use './object/project/front';
-@use './object/project/index';
-@use './object/project/inquiry';
-@use './object/project/shop';
+@forward "./object/_index";
