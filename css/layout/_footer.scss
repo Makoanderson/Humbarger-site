@@ -17,7 +17,7 @@
             &--list {
                 display: flex;
                 list-style: none;
-                @include footerNav;
+                //@include footerNav;
             }
 
             &--nav--list li+li {
@@ -38,7 +38,7 @@
 
         &--copyright {
             width: 56%;
-            @include footerCopy;
+            //@include footerCopy;
         }
     }
 }
