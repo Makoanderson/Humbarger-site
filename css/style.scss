@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 // foundation------------------------------------------
-//@forward "./foundation/index";
+@forward "./foundation/mixin/_fontset";
 
 // layout----------------------------------------------
 @use "./layout/_footer";

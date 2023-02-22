@@ -1,4 +1,4 @@
-@use "../foundation/mixin/_fontset";
+@use "../foundation/mixin/_fontset" as fontset;
 
 .l-footer {
     background-color: #9D8670;
@@ -18,7 +18,7 @@
             &--list {
                 display: flex;
                 list-style: none;
-                //@include footerNav;
+                @include fontset.footerNav;
             }
 
             &--nav--list li+li {
@@ -39,7 +39,7 @@
 
         &--copyright {
             width: 56%;
-            //@include footerCopy;
+            @include fontset.footerCopy;
         }
     }
 }
