@@ -8,3 +8,57 @@
     font-size: 14px;
     color: #ffffff;
 }
+
+//サイドバー関連
+@mixin sidebarTitle {
+    font-size: 34px;
+    color: #707070;
+    font-weight: bold;
+}
+
+@mixin sidebarNavtitle {
+    font-size: 24px;
+    color: #707070;
+    font-weight: bold;
+}
+
+@mixin sidebarNavmenu {
+    font-size: 20px;
+    color: #707070;
+    font-weight: bold;
+}
+
+//ヘッダー関連
+@mixin pcheaderTitle {
+    //PC用
+    font-size: 64px;
+    color: #707070;
+    font-weight: bold;
+}
+
+@mixin headerTitle {
+    //Tab, SP用
+    font-size: 40px;
+    color: #707070;
+    font-weight: bold;
+}
+
+@mixin headerBtn {
+    font-size: 16px;
+    color: #707070;
+    font-weight: bold;
+}
+
+@mixin tabheaderMenu {
+    //Tab用
+    font-size: 34px;
+    color: #707070;
+    font-weight: bold;
+}
+
+@mixin spheaderMenu {
+    //SP用
+    font-size: 20px;
+    color: #707070;
+    font-weight: bold;
+}
