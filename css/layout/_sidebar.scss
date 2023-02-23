@@ -1,0 +1,14 @@
+@use "../foundation/mixin/_fontset" as fontset;
+
+.l-sidebar {
+    width: 357px;
+    display: none;
+
+    &__inner {
+        background-color: #F2EDE9;
+    }
+
+    &__inner::after {
+        background-color: #000;
+    }
+}
