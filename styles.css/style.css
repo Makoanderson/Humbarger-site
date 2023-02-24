@@ -60,4 +60,46 @@
   height: 217px;
   background-color: #fff7ef;
 }
+.l-main-header__btn {
+  font-size: 20px;
+  color: #707070;
+  font-weight: bold;
+  padding-top: 14px;
+  margin-right: 16px;
+  text-align: right;
+}
+.l-main-header__contents {
+  text-align: center;
+  margin: 0 auto;
+}
+.l-main-header__contents--title {
+  font-size: 40px;
+  color: #707070;
+  font-weight: bold;
+  margin-bottom: 38px;
+}
+.l-main-header__contents--search {
+  max-width: 320px;
+  height: 46px;
+  text-align: center;
+  margin: 0 auto;
+}
+.l-main-header__contents--search form {
+  display: flex;
+}
+.l-main-header__contents--search-box {
+  background-color: #ffffff;
+  width: 230px;
+  border: solid #707070;
+  border-radius: 10px;
+  height: 46px;
+  margin-right: 13px;
+}
+.l-main-header__contents--search-btn {
+  width: 78px;
+  background: linear-gradient(#f2ede9, #ded8d3);
+  border: solid #707070;
+  border-radius: 10px;
+  height: 46px;
+}
 /*# sourceMappingURL=style.css.map */
