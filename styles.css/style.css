@@ -80,14 +80,14 @@
   position: absolute;
   top: 0;
   left: 18px;
+  /*&__inner::after {
+      background-color: #000;
+      width: 375px;
+  }*/
 }
-.l-sidebar__inner {
-  background-color: #F2EDE9;
-}
-.l-sidebar__inner::after {
+.l-sidebar ::after {
   background-color: #000;
 }
-
 .l-main {
   background-color: #fffdfa;
   width: 100%;
@@ -138,5 +138,89 @@
   border: solid #707070;
   border-radius: 10px;
   height: 46px;
+}
+
+.l-container {
+  position: relative;
+}
+
+.p-menu__title {
+  font-size: 34px;
+  color: #707070;
+  font-weight: bold;
+}
+.p-menu__burger {
+  position: relative;
+  margin-left: 139px;
+  margin-bottom: 477px;
+}
+.p-menu__burger--title {
+  font-size: 24px;
+  color: #707070;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.p-menu__burger--list {
+  font-size: 20px;
+  color: #707070;
+  font-weight: bold;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.p-menu__burger--list ul {
+  list-style: none;
+}
+.p-menu__side {
+  position: relative;
+  margin-left: 139px;
+  margin-bottom: 326px;
+}
+.p-menu__side--title {
+  font-size: 24px;
+  color: #707070;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.p-menu__side--list {
+  list-style: none;
+  font-size: 20px;
+  color: #707070;
+  font-weight: bold;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.p-menu__side--list ul {
+  list-style: none;
+}
+.p-menu__drink {
+  position: relative;
+  margin-left: 139px;
+  margin-bottom: 474px;
+}
+.p-menu__drink--title {
+  font-size: 24px;
+  color: #707070;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.p-menu__drink--list {
+  list-style: none;
+  font-size: 20px;
+  color: #707070;
+  font-weight: bold;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.p-menu__drink--list ul {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */

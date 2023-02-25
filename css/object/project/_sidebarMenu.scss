@@ -1,4 +1,4 @@
-@use "./foundation/mixin/_fontset" as fontset;
+@use "../../foundation/mixin/_fontset" as fontset;
 
 .p-menu {
     &__title {
@@ -7,6 +7,34 @@
 
     &__burger {
         position: relative;
+        margin-left: 139px;
+        margin-bottom: 477px;
+
+        &--title {
+            @include fontset.sidebarNavtitle;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &--list {
+            //list-style: none;
+            @include fontset.sidebarNavmenu;
+            position: absolute;
+            top: 70px;
+            left: 20px;
+
+            ul {
+                list-style: none;
+            }
+        }
+
+    }
+
+    &__side {
+        position: relative;
+        margin-left: 139px;
+        margin-bottom: 326px;
 
         &--title {
             @include fontset.sidebarNavtitle;
@@ -21,11 +49,35 @@
             position: absolute;
             top: 70px;
             left: 20px;
-        }
 
+            ul {
+                list-style: none;
+            }
+        }
     }
 
-    //&__side {}
+    &__drink {
+        position: relative;
+        margin-left: 139px;
+        margin-bottom: 474px;
 
-    //&__drink {}
+        &--title {
+            @include fontset.sidebarNavtitle;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &--list {
+            list-style: none;
+            @include fontset.sidebarNavmenu;
+            position: absolute;
+            top: 70px;
+            left: 20px;
+
+            ul {
+                list-style: none;
+            }
+        }
+    }
 }
