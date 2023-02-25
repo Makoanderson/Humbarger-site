@@ -2,7 +2,10 @@
 
 .l-sidebar {
     width: 357px;
-    display: none;
+    //display: none;
+    position: absolute;
+    top: 0;
+    left: 18px;
 
     &__inner {
         background-color: #F2EDE9;

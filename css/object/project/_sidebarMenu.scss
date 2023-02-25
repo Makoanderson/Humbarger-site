@@ -1,0 +1,31 @@
+@use "./foundation/mixin/_fontset" as fontset;
+
+.p-menu {
+    &__title {
+        @include fontset.sidebarTitle;
+    }
+
+    &__burger {
+        position: relative;
+
+        &--title {
+            @include fontset.sidebarNavtitle;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &--list {
+            list-style: none;
+            @include fontset.sidebarNavmenu;
+            position: absolute;
+            top: 70px;
+            left: 20px;
+        }
+
+    }
+
+    //&__side {}
+
+    //&__drink {}
+}
