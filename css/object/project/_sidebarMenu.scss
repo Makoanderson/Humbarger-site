@@ -2,7 +2,12 @@
 
 .p-menu {
     &__title {
-        @include fontset.sidebarTitle;
+        margin-left: 93px;
+        margin-bottom: 297px;
+
+        h2 {
+            @include fontset.sidebarTitle;
+        }
     }
 
     &__burger {

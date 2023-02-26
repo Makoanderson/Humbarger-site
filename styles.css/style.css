@@ -80,6 +80,7 @@
   position: absolute;
   top: 0;
   left: 18px;
+  background-color: #f2ede9;
   /*&__inner::after {
       background-color: #000;
       width: 375px;
@@ -145,6 +146,10 @@
 }
 
 .p-menu__title {
+  margin-left: 93px;
+  margin-bottom: 297px;
+}
+.p-menu__title h2 {
   font-size: 34px;
   color: #707070;
   font-weight: bold;
