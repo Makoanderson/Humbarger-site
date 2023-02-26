@@ -81,13 +81,17 @@
   top: 0;
   left: 18px;
   background-color: #f2ede9;
+  box-shadow: -25px 0px 0px 0px rgba(0, 0, 0, 0.5);
   /*&__inner::after {
       background-color: #000;
       width: 375px;
   }*/
 }
-.l-sidebar ::after {
+.l-sidebar ::before {
+  width: 375px;
   background-color: #000;
+  opacity: 0.5;
+  z-index: -10px;
 }
 .l-main {
   background-color: #fffdfa;
@@ -148,35 +152,70 @@
 .p-menu__title {
   margin-left: 93px;
   margin-bottom: 297px;
+  padding-top: 82px;
 }
 .p-menu__title h2 {
   font-size: 34px;
   color: #707070;
   font-weight: bold;
 }
-.p-menu__burger {
+.p-menu__nav {
+  /*&--title {
+      @include fontset.sidebarNavtitle;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+
+  &--list {
+      //list-style: none;
+      @include fontset.sidebarNavmenu;
+      position: absolute;
+      top: 70px;
+      left: 20px;
+
+      ul {
+          list-style: none;
+      }
+  }*/
+}
+.p-menu__nav--title {
+  list-style: none;
+}
+.p-menu__nav--title--burger {
   position: relative;
   margin-left: 139px;
   margin-bottom: 477px;
-}
-.p-menu__burger--title {
   font-size: 24px;
   color: #707070;
   font-weight: bold;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-.p-menu__burger--list {
-  font-size: 20px;
+.p-menu__nav--title--side {
+  position: relative;
+  margin-left: 139px;
+  margin-bottom: 326px;
+  font-size: 24px;
   color: #707070;
   font-weight: bold;
+}
+.p-menu__nav--title--drink {
+  position: relative;
+  margin-left: 139px;
+  margin-bottom: 474px;
+  font-size: 24px;
+  color: #707070;
+  font-weight: bold;
+}
+.p-menu__nav--list {
   position: absolute;
   top: 70px;
   left: 20px;
 }
-.p-menu__burger--list ul {
+.p-menu__nav--list li {
   list-style: none;
+  font-size: 20px;
+  color: #707070;
+  font-weight: normal;
 }
 .p-menu__side {
   position: relative;
@@ -195,7 +234,7 @@
   list-style: none;
   font-size: 20px;
   color: #707070;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   top: 70px;
   left: 20px;
@@ -220,7 +259,7 @@
   list-style: none;
   font-size: 20px;
   color: #707070;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   top: 70px;
   left: 20px;

@@ -4,18 +4,55 @@
     &__title {
         margin-left: 93px;
         margin-bottom: 297px;
+        //list-style: none;
+        padding-top: 82px;
 
         h2 {
             @include fontset.sidebarTitle;
         }
     }
 
-    &__burger {
-        position: relative;
-        margin-left: 139px;
-        margin-bottom: 477px;
-
+    &__nav {
         &--title {
+            list-style: none;
+
+            &--burger {
+                position: relative;
+                margin-left: 139px;
+                margin-bottom: 477px;
+                @include fontset.sidebarNavtitle
+            }
+
+            &--side {
+                position: relative;
+                margin-left: 139px;
+                margin-bottom: 326px;
+                @include fontset.sidebarNavtitle
+            }
+
+            &--drink {
+                position: relative;
+                margin-left: 139px;
+                margin-bottom: 474px;
+                @include fontset.sidebarNavtitle
+            }
+        }
+
+        &--list {
+            //@include fontset.sidebarNavmenu;
+            position: absolute;
+            top: 70px;
+            left: 20px;
+
+            //list-style: none;
+            li {
+                list-style: none;
+                @include fontset.sidebarNavmenu;
+            }
+        }
+
+
+        /*&--title {
             @include fontset.sidebarNavtitle;
             position: absolute;
             top: 0;
@@ -32,7 +69,7 @@
             ul {
                 list-style: none;
             }
-        }
+        }*/
 
     }
 

@@ -7,9 +7,13 @@
     top: 0;
     left: 18px;
     background-color: #f2ede9;
+    box-shadow: -25px 0px 0px 0px rgba(0, 0, 0, 0.5);
 
-    ::after {
+    ::before {
+        width: 375px;
         background-color: #000;
+        opacity: 0.5;
+        z-index: -10px;
     }
 
     &__inner {
