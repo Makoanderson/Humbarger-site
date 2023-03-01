@@ -2,6 +2,7 @@
 
 // foundation------------------------------------------
 @forward "./foundation/mixin/_fontset";
+@forward "./foundation/mixin/_breakpoint";
 
 // layout----------------------------------------------
 @use "./layout/_footer";
