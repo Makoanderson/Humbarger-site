@@ -22,12 +22,15 @@
         &__contents {
             text-align: center;
             margin: 0 auto;
-            @include bp.mq-up(sm);
+            @include bp.mq-up(md);
 
             &--title {
                 @include fontset.headerTitle;
                 margin-bottom: 38px;
-                @include bp.mq-up(sm);
+
+                @include bp.mq-up(md) {
+                    @include fontset.pcheaderTitle;
+                }
             }
 
             &--search {
@@ -35,7 +38,10 @@
                 height: 46px;
                 text-align: center;
                 margin: 0 auto;
-                @include bp.mq-up(sm);
+
+                @include bp.mq-up(sm) {
+                    max-width: 546px;
+                }
 
                 form {
                     display: flex;
@@ -48,7 +54,11 @@
                     border-radius: 10px;
                     height: 46px;
                     margin-right: 13px;
-                    @include bp.mq-up(sm);
+
+                    @include bp.mq-up(sm) {
+                        margin-right: 15px;
+                        width: 396px;
+                    }
                 }
 
                 &-btn {
@@ -57,7 +67,10 @@
                     border: solid #707070;
                     border-radius: 10px;
                     height: 46px;
-                    @include bp.mq-up(sm);
+
+                    @include bp.mq-up(sm) {
+                        width: 136px;
+                    }
                 }
             }
         }

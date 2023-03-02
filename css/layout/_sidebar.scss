@@ -9,7 +9,11 @@
     left: 18px;
     background-color: #f2ede9;
     box-shadow: -25px 0px 0px 0px rgba(0, 0, 0, 0.5);
-    @include bp.mq-up(sm);
+
+    @include bp.mq-up(sm) {
+        width: 367px;
+    }
+
 
 
     &__inner {
