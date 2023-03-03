@@ -2,13 +2,31 @@
 @use "../../foundation/mixin/_breakpoint" as bp;
 
 .p-menu {
-    &__title {
+    &__btn {
         margin-left: 93px;
         margin-bottom: 297px;
         //list-style: none;
         padding-top: 82px;
+        width: 60px;
+        height: 60px;
+        position: relative;
 
-        h2 {
+        @include bp.mq-up(tab) {
+            display: none;
+            padding-top: 82px;
+        }
+
+        ::before,
+        ::after {
+            content: "";
+            width: 20px;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            //left: calc(50%-math.div(20px, 2));
+        }
+
+        span {
             @include fontset.sidebarTitle;
         }
     }

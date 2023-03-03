@@ -14,10 +14,20 @@
         width: 367px;
     }
 
+    @include bp.mq-up(tab) {
+        display: none;
+    }
+
 
 
     &__inner {
+
         //background-color: #F2EDE9;
+        .l-sidebar__inner--menu {
+            @include bp.mq-up(tab) {
+                margin-top: 212px;
+            }
+        }
     }
 
     /*&__inner::after {

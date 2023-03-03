@@ -22,13 +22,16 @@
         &__contents {
             text-align: center;
             margin: 0 auto;
-            @include bp.mq-up(md);
+
+            @include bp.mq-up(tab) {
+                display: flex;
+            }
 
             &--title {
                 @include fontset.headerTitle;
                 margin-bottom: 38px;
 
-                @include bp.mq-up(md) {
+                @include bp.mq-up(tab) {
                     @include fontset.pcheaderTitle;
                 }
             }
