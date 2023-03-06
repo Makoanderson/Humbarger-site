@@ -14,7 +14,7 @@
         &__btn {
             @include fontset.spheaderMenu;
             padding-top: 14px;
-            margin-right: 16px;
+            margin-right: 4.266vw;
             text-align: right;
             @include bp.mq-up(sm);
         }
@@ -37,13 +37,13 @@
             }
 
             &--search {
-                max-width: 320px;
+                max-width: 85.333vw;
                 height: 46px;
                 text-align: center;
                 margin: 0 auto;
 
                 @include bp.mq-up(sm) {
-                    max-width: 546px;
+                    max-width: 65.467vw;
                 }
 
                 form {
@@ -52,27 +52,27 @@
 
                 &-box {
                     background-color: #ffffff;
-                    width: 230px;
+                    width: 61.333vw;
                     border: solid #707070;
                     border-radius: 10px;
                     height: 46px;
-                    margin-right: 13px;
+                    margin-right: 3.466vw;
 
                     @include bp.mq-up(sm) {
-                        margin-right: 15px;
-                        width: 396px;
+                        margin-right: 1.798vw;
+                        width: 47.482vw;
                     }
                 }
 
                 &-btn {
-                    width: 78px;
+                    width: 20.8vw;
                     background: linear-gradient(#f2ede9, #ded8d3);
                     border: solid #707070;
                     border-radius: 10px;
                     height: 46px;
 
                     @include bp.mq-up(sm) {
-                        width: 136px;
+                        width: 36.2666vw;
                     }
                 }
             }
