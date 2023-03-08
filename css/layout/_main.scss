@@ -34,6 +34,10 @@
                 @include bp.mq-up(tab) {
                     @include fontset.pcheaderTitle;
                 }
+
+                @include bp.mq-up(pc) {
+                    margin-left: 4.18544752092vw;
+                }
             }
 
             &--search {
@@ -46,33 +50,37 @@
                     max-width: 65.467vw;
                 }
 
+                @include bp.mq-up(pc) {
+                    width: 35.620915032679%;
+                }
+
                 form {
                     display: flex;
                 }
 
                 &-box {
                     background-color: #ffffff;
-                    width: 61.333vw;
+                    width: 71.875%;
                     border: solid #707070;
                     border-radius: 10px;
                     height: 46px;
-                    margin-right: 3.466vw;
+                    margin-right: 3.75%;
 
                     @include bp.mq-up(sm) {
-                        margin-right: 1.798vw;
-                        width: 47.482vw;
+                        margin-right: 2.7472527472527%;
+                        width: 72.527472527472%;
                     }
                 }
 
                 &-btn {
-                    width: 20.8vw;
+                    width: 24.375%;
                     background: linear-gradient(#f2ede9, #ded8d3);
                     border: solid #707070;
                     border-radius: 10px;
                     height: 46px;
 
                     @include bp.mq-up(sm) {
-                        width: 36.2666vw;
+                        width: 24.90842490842%;
                     }
                 }
             }

@@ -9,14 +9,19 @@
     left: 4.8vw;
     background-color: #f2ede9;
     box-shadow: -25px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    display: none;
 
     @include bp.mq-up(sm) {
-        width: 97.8666vw;
+        width: 367px;
     }
 
-    @include bp.mq-up(tab) {
-        display: none;
+    @include bp.mq-up(pc) {
+        left: auto;
+        right: 0;
+        box-shadow: none;
+        display: block;
     }
+
 
 
 
