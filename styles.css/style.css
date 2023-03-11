@@ -101,6 +101,7 @@
     right: 0;
     box-shadow: none;
     display: block;
+    width: 19.1145833333vw;
   }
 }
 @media screen and (min-width: 835px) {
@@ -115,7 +116,7 @@
 }
 @media screen and (min-width: 1040px) {
   .l-main-content {
-    width: calc(100vw - 367px);
+    width: 80.8333334vw;
     display: contents;
   }
 }
@@ -126,7 +127,7 @@
 }
 @media screen and (min-width: 1040px) {
   .l-main-header {
-    width: calc(100vw - 367px);
+    width: calc(100% - 19.1666666vw);
   }
 }
 .l-main-header__btn {
@@ -145,22 +146,21 @@
 .l-main-header__contents {
   text-align: center;
   margin: 0 auto;
-}
-@media screen and (min-width: 835px) {
-  .l-main-header__contents {
-    display: flex;
-  }
+  /*@include bp.mq-up(tab) {
+      display: flex;
+  }*/
 }
 @media screen and (min-width: 1040px) {
   .l-main-header__contents {
     padding-top: 86px;
+    display: flex;
   }
 }
 .l-main-header__contents--title {
   font-size: 40px;
   color: #707070;
   font-weight: bold;
-  margin-bottom: 38px;
+  padding-bottom: 38px;
 }
 @media screen and (min-width: 769px) {
   .l-main-header__contents--title {
@@ -170,6 +170,7 @@
 @media screen and (min-width: 1040px) {
   .l-main-header__contents--title {
     margin-left: 4.1854475209vw;
+    margin-top: -15px;
   }
 }
 .l-main-header__contents--search {
@@ -177,15 +178,24 @@
   height: 46px;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 44px;
 }
 @media screen and (min-width: 376px) {
   .l-main-header__contents--search {
     max-width: 65.467vw;
+    padding-bottom: 44px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .l-main-header__contents--search {
+    padding-bottom: 38px;
   }
 }
 @media screen and (min-width: 1040px) {
   .l-main-header__contents--search {
     width: 35.6209150327%;
+    position: absolute;
+    right: 20.7291666666vw;
   }
 }
 .l-main-header__contents--search form {
@@ -278,7 +288,7 @@
 }
 .p-menu__nav--title--burger {
   position: relative;
-  margin-left: 139px;
+  margin-left: 46px;
   margin-bottom: 477px;
   font-size: 24px;
   color: #707070;
@@ -286,7 +296,7 @@
 }
 .p-menu__nav--title--side {
   position: relative;
-  margin-left: 139px;
+  margin-left: 46px;
   margin-bottom: 326px;
   font-size: 24px;
   color: #707070;
@@ -294,7 +304,7 @@
 }
 .p-menu__nav--title--drink {
   position: relative;
-  margin-left: 139px;
+  margin-left: 46px;
   margin-bottom: 474px;
   font-size: 24px;
   color: #707070;

@@ -3,8 +3,8 @@
 
 .p-menu {
     &__btn {
-        margin-left: 24.8vw;
-        margin-bottom: 297px;
+        //margin-left: 24.8vw;
+        //margin-bottom: 297px;
         //list-style: none;
         padding-top: 82px;
         width: 16vw;
@@ -37,21 +37,21 @@
 
             &--burger {
                 position: relative;
-                margin-left: 139px;
+                margin-left: 46px;
                 margin-bottom: 477px;
                 @include fontset.sidebarNavtitle
             }
 
             &--side {
                 position: relative;
-                margin-left: 139px;
+                margin-left: 46px;
                 margin-bottom: 326px;
                 @include fontset.sidebarNavtitle
             }
 
             &--drink {
                 position: relative;
-                margin-left: 139px;
+                margin-left: 46px;
                 margin-bottom: 474px;
                 @include fontset.sidebarNavtitle
             }
