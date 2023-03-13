@@ -237,51 +237,86 @@
 }
 
 .p-menu__btn {
-  margin-left: 24.8vw;
-  margin-bottom: 297px;
   padding-top: 82px;
-  width: 16vw;
+  width: 60px;
   height: 60px;
   position: relative;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 1040px) {
   .p-menu__btn {
     display: none;
     padding-top: 82px;
   }
 }
-.p-menu__btn ::before,
-.p-menu__btn ::after {
+
+/*.p-menu__btn ::before,
+::after {
+    content: "";
+    width: 32px;
+    height: 6px;
+    background: #707070;
+    position: absolute;
+    top: 20px;
+    right: -50vw;
+    //left: calc(50% - math.div(20px, 2));
+}*/
+.p-menu__btn::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  display: inline-block;
   content: "";
-  width: 20px;
-  height: 1px;
-  background: #fff;
+  width: 32px;
+  height: 6px;
+  background: #707070;
   position: absolute;
+  top: 20px;
+  right: -50vw;
 }
-.p-menu__btn span {
+
+.p-menu__btn::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  display: inline-block;
+  content: "";
+  width: 32px;
+  height: 6px;
+  background: #707070;
+  position: absolute;
+  top: 20px;
+  right: -50vw;
+}
+
+span {
   font-size: 34px;
   color: #707070;
   font-weight: bold;
 }
+@media screen and (min-width: 835px) {
+  span {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: #707070;
+  }
+}
+
 .p-menu__nav {
   /*&--title {
-      @include fontset.sidebarNavtitle;
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-
-  &--list {
-      //list-style: none;
-      @include fontset.sidebarNavmenu;
-      position: absolute;
-      top: 70px;
-      left: 20px;
-
-      ul {
-          list-style: none;
+          @include fontset.sidebarNavtitle;
+          position: absolute;
+          top: 0;
+          left: 0;
       }
-  }*/
+
+      &--list {
+          //list-style: none;
+          @include fontset.sidebarNavmenu;
+          position: absolute;
+          top: 70px;
+          left: 20px;
+
+          ul {
+              list-style: none;
+          }
+      }*/
 }
 .p-menu__nav--title {
   list-style: none;
@@ -321,6 +356,7 @@
   color: #707070;
   font-weight: normal;
 }
+
 .p-menu__side {
   position: relative;
   margin-left: 139px;
@@ -346,6 +382,7 @@
 .p-menu__side--list ul {
   list-style: none;
 }
+
 .p-menu__drink {
   position: relative;
   margin-left: 139px;

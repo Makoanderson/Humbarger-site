@@ -7,28 +7,65 @@
         //margin-bottom: 297px;
         //list-style: none;
         padding-top: 82px;
-        width: 16vw;
+        width: 60px;
         height: 60px;
         position: relative;
 
-        @include bp.mq-up(tab) {
+        @include bp.mq-up(pc) {
             display: none;
             padding-top: 82px;
         }
+    }
+}
 
-        ::before,
-        ::after {
-            content: "";
-            width: 20px;
-            height: 1px;
-            background: #fff;
-            position: absolute;
-            //left: calc(50%-math.div(20px, 2));
-        }
+/*.p-menu__btn ::before,
+::after {
+    content: "";
+    width: 32px;
+    height: 6px;
+    background: #707070;
+    position: absolute;
+    top: 20px;
+    right: -50vw;
+    //left: calc(50% - math.div(20px, 2));
+}*/
 
-        span {
-            @include fontset.sidebarTitle;
-        }
+.p-menu__btn::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 6px;
+    background: #707070;
+    position: absolute;
+    top: 20px;
+    right: -50vw;
+}
+
+.p-menu__btn::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 6px;
+    background: #707070;
+    position: absolute;
+    top: 20px;
+    right: -50vw;
+}
+
+
+.p-menu__btn span {
+    @include bp.mq-up(tab) {
+        position: absolute;
+        width: 20px;
+        height: 1px;
+        background: #707070;
+        display: none;
+    }
+
+    span {
+        @include fontset.sidebarTitle;
     }
 
     &__nav {
@@ -92,7 +129,7 @@
 
     }
 
-    &__side {
+    .p-menu__side {
         position: relative;
         margin-left: 139px;
         margin-bottom: 326px;
@@ -117,7 +154,7 @@
         }
     }
 
-    &__drink {
+    .p-menu__drink {
         position: relative;
         margin-left: 139px;
         margin-bottom: 474px;
