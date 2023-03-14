@@ -56,6 +56,8 @@
 
 
 .p-menu__btn span {
+    visibility: hidden;
+
     @include bp.mq-up(tab) {
         position: absolute;
         width: 20px;
@@ -66,116 +68,121 @@
 
     span {
         @include fontset.sidebarTitle;
+        //visibility: hidden;
+    }
+}
+
+.p-menu__nav {
+    &--title {
+        list-style: none;
+
+        &--burger {
+            position: relative;
+            margin-left: 46px;
+            margin-bottom: 477px;
+            @include fontset.sidebarNavtitle
+        }
+
+        &--side {
+            position: relative;
+            margin-left: 46px;
+            margin-bottom: 326px;
+            @include fontset.sidebarNavtitle
+        }
+
+        &--drink {
+            position: relative;
+            margin-left: 46px;
+            margin-bottom: 474px;
+            @include fontset.sidebarNavtitle
+        }
     }
 
-    &__nav {
-        &--title {
+    &--list {
+        //@include fontset.sidebarNavmenu;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+
+        //list-style: none;
+        li {
             list-style: none;
-
-            &--burger {
-                position: relative;
-                margin-left: 46px;
-                margin-bottom: 477px;
-                @include fontset.sidebarNavtitle
-            }
-
-            &--side {
-                position: relative;
-                margin-left: 46px;
-                margin-bottom: 326px;
-                @include fontset.sidebarNavtitle
-            }
-
-            &--drink {
-                position: relative;
-                margin-left: 46px;
-                margin-bottom: 474px;
-                @include fontset.sidebarNavtitle
-            }
+            @include fontset.sidebarNavmenu;
         }
+    }
+}
 
-        &--list {
-            //@include fontset.sidebarNavmenu;
-            position: absolute;
-            top: 70px;
-            left: 20px;
+.p-menu__nav--title {
+    position: relative;
+    margin-left: 139px;
+    margin-bottom: 326px;
 
-            //list-style: none;
-            li {
-                list-style: none;
-                @include fontset.sidebarNavmenu;
-            }
-        }
-
-
-        /*&--title {
+    /*&--title {
             @include fontset.sidebarNavtitle;
             position: absolute;
             top: 0;
             left: 0;
-        }
-
-        &--list {
-            //list-style: none;
-            @include fontset.sidebarNavmenu;
-            position: absolute;
-            top: 70px;
-            left: 20px;
-
-            ul {
-                list-style: none;
-            }
         }*/
 
+    &--burger--list {
+        list-style: none;
+        @include fontset.sidebarNavmenu;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+
+        ul {
+            list-style: none;
+        }
     }
+}
 
-    .p-menu__side {
-        position: relative;
-        margin-left: 139px;
-        margin-bottom: 326px;
+.p-menu__nav--title {
+    position: relative;
+    margin-left: 139px;
+    margin-bottom: 474px;
 
-        &--title {
+    /*&--title {
             @include fontset.sidebarNavtitle;
             position: absolute;
             top: 0;
             left: 0;
-        }
+        }*/
 
-        &--list {
+    &--side--list {
+        list-style: none;
+        @include fontset.sidebarNavmenu;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+
+        ul {
             list-style: none;
-            @include fontset.sidebarNavmenu;
-            position: absolute;
-            top: 70px;
-            left: 20px;
-
-            ul {
-                list-style: none;
-            }
         }
     }
+}
 
-    .p-menu__drink {
-        position: relative;
-        margin-left: 139px;
-        margin-bottom: 474px;
+.p-menu__nav--title {
+    position: relative;
+    margin-left: 139px;
+    margin-bottom: 474px;
 
-        &--title {
+    /*&--title {
             @include fontset.sidebarNavtitle;
             position: absolute;
             top: 0;
             left: 0;
-        }
+        }*/
 
-        &--list {
+    &--drink--list {
+        list-style: none;
+        @include fontset.sidebarNavmenu;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+
+        ul {
             list-style: none;
-            @include fontset.sidebarNavmenu;
-            position: absolute;
-            top: 70px;
-            left: 20px;
-
-            ul {
-                list-style: none;
-            }
         }
     }
 }

@@ -85,6 +85,9 @@
   background-color: #f2ede9;
   box-shadow: -25px 0px 0px 0px rgba(0, 0, 0, 0.5);
   display: none;
+  /* @include bp.mq-up(md) {
+      box-shadow: -55.995263836vw 0px 0px 0px rgba(0, 0, 0, 0.5);
+  }*/
   /*&__inner::after {
       background-color: #000;
       width: 375px;
@@ -284,40 +287,24 @@
   right: -50vw;
 }
 
-span {
-  font-size: 34px;
-  color: #707070;
-  font-weight: bold;
+.p-menu__btn span {
+  visibility: hidden;
 }
 @media screen and (min-width: 835px) {
-  span {
+  .p-menu__btn span {
     position: absolute;
     width: 20px;
     height: 1px;
     background: #707070;
+    display: none;
   }
 }
-
-.p-menu__nav {
-  /*&--title {
-          @include fontset.sidebarNavtitle;
-          position: absolute;
-          top: 0;
-          left: 0;
-      }
-
-      &--list {
-          //list-style: none;
-          @include fontset.sidebarNavmenu;
-          position: absolute;
-          top: 70px;
-          left: 20px;
-
-          ul {
-              list-style: none;
-          }
-      }*/
+.p-menu__btn span span {
+  font-size: 34px;
+  color: #707070;
+  font-weight: bold;
 }
+
 .p-menu__nav--title {
   list-style: none;
 }
@@ -357,20 +344,18 @@ span {
   font-weight: normal;
 }
 
-.p-menu__side {
+.p-menu__nav--title {
   position: relative;
   margin-left: 139px;
   margin-bottom: 326px;
+  /*&--title {
+          @include fontset.sidebarNavtitle;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }*/
 }
-.p-menu__side--title {
-  font-size: 24px;
-  color: #707070;
-  font-weight: bold;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.p-menu__side--list {
+.p-menu__nav--title--burger--list {
   list-style: none;
   font-size: 20px;
   color: #707070;
@@ -379,24 +364,22 @@ span {
   top: 70px;
   left: 20px;
 }
-.p-menu__side--list ul {
+.p-menu__nav--title--burger--list ul {
   list-style: none;
 }
 
-.p-menu__drink {
+.p-menu__nav--title {
   position: relative;
   margin-left: 139px;
   margin-bottom: 474px;
+  /*&--title {
+          @include fontset.sidebarNavtitle;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }*/
 }
-.p-menu__drink--title {
-  font-size: 24px;
-  color: #707070;
-  font-weight: bold;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.p-menu__drink--list {
+.p-menu__nav--title--side--list {
   list-style: none;
   font-size: 20px;
   color: #707070;
@@ -405,7 +388,31 @@ span {
   top: 70px;
   left: 20px;
 }
-.p-menu__drink--list ul {
+.p-menu__nav--title--side--list ul {
+  list-style: none;
+}
+
+.p-menu__nav--title {
+  position: relative;
+  margin-left: 139px;
+  margin-bottom: 474px;
+  /*&--title {
+          @include fontset.sidebarNavtitle;
+          position: absolute;
+          top: 0;
+          left: 0;
+      }*/
+}
+.p-menu__nav--title--drink--list {
+  list-style: none;
+  font-size: 20px;
+  color: #707070;
+  font-weight: normal;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+.p-menu__nav--title--drink--list ul {
   list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
