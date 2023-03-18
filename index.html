@@ -18,16 +18,18 @@
 <body>
     <wrapper class="l-wrapper">
         <container class="l-container">
+            <div class="l-container-bg">
+            </div>
             <main class="l-main-content"> <!--メイン部分-->
                 <header class="l-main-header"> <!--メイン内ヘッダー部分-->
-                    <div class="l-main-header__btn">
+                    <div class="l-main-header__btn"> <!--メイン内ヘッダーボタン部分-->
                         <p>Menu</p>
                     </div>
-                    <section class="l-main-header__contents">
+                    <section class="l-main-header__contents"> <!--メイン内ヘッダー部分--タイトル-->
                         <h2 class="l-main-header__contents--title">
                             Hamburger
                         </h2>
-                        <div class="l-main-header__contents--search">
+                        <div class="l-main-header__contents--search"> <!--メイン内ヘッダー部分--検索入力＆ボタン部分-->
                             <form action="#" method="get">
                                 <input class="l-main-header__contents--search-box" type="search" name="search">
                                 <input class="l-main-header__contents--search-btn" type="submit" name="submit"
@@ -38,16 +40,16 @@
                 </header>
             </main>
             <aside class="l-sidebar"> <!--サイドバー部分-->
-                <div class="l-sidebar__inner p-menu">
+                <div class="l-sidebar__inner p-menu"> <!--サイドバー部分--タイトル-->
                     <button class="l-sidebar__inner--title p-menu__btn">
                         <span>
                             Menu
                         </span>
                     </button>
-                    <section class="l-sidebar__inner--menu p-menu__nav">
-                        <ul class="p-menu__nav--title">
+                    <section class="l-sidebar__inner--menu p-menu__nav"> <!--サイドバー部分各種メニュー-->
+                        <ul class="p-menu__nav--title"> <!--サイドバー部分各種メニュータイトル-->
                             <li class="p-menu__nav--title--burger">バーガー
-                                <ul class="p-menu__nav--list">
+                                <ul class="p-menu__nav--title--burger--list"><!--サイドバー部分各種メニュー詳細-->
                                     <li>ハンバーガー</li>
                                     <li>チーズバーガー</li>
                                     <li>テリヤキバーガー</li>
@@ -58,7 +60,7 @@
                                 </ul>
                             </li>
                             <li class="p-menu__nav--title--side">サイド
-                                <ul class="p-menu__nav--list">
+                                <ul class="p-menu__nav--title--side--list">
                                     <li>ポテト</li>
                                     <li>サラダ</li>
                                     <li>ナゲット</li>
@@ -66,7 +68,7 @@
                                 </ul>
                             </li>
                             <li class="p-menu__nav--title--drink">ドリンク
-                                <ul class="p-menu__nav--list">
+                                <ul class="p-menu__nav--title--drink--list">
                                     <li>コーラ</li>
                                     <li>ファンタ</li>
                                     <li>オレンジ</li>

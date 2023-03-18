@@ -81,11 +81,12 @@
   width: 95.1999vw;
   position: absolute;
   top: 0;
-  left: 4.8vw;
   background-color: #f2ede9;
-  box-shadow: -25px 0px 0px 0px rgba(0, 0, 0, 0.5);
   display: none;
-  /* @include bp.mq-up(md) {
+  right: 0;
+  height: 100vh;
+  z-index: 50;
+  /*@include bp.mq-up(md) {
       box-shadow: -55.995263836vw 0px 0px 0px rgba(0, 0, 0, 0.5);
   }*/
   /*&__inner::after {
@@ -93,7 +94,7 @@
       width: 375px;
   }*/
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
   .l-sidebar {
     width: 367px;
   }
@@ -107,7 +108,7 @@
     width: 19.1145833333vw;
   }
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 834px) {
   .l-sidebar__inner .l-sidebar__inner--menu {
     margin-top: 212px;
   }
@@ -183,7 +184,7 @@
   margin: 0 auto;
   padding-bottom: 44px;
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
   .l-main-header__contents--search {
     max-width: 65.467vw;
     padding-bottom: 44px;
@@ -212,7 +213,7 @@
   height: 46px;
   margin-right: 3.75%;
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
   .l-main-header__contents--search-box {
     margin-right: 2.7472527473%;
     width: 72.5274725275%;
@@ -225,7 +226,7 @@
   border-radius: 10px;
   height: 46px;
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
   .l-main-header__contents--search-btn {
     width: 24.9084249084%;
   }
@@ -233,6 +234,17 @@
 
 .l-container {
   position: relative;
+  /*.open {
+      display: fixed;
+      opcity: 0.5;
+      z-index: 30;
+      background-color: rgba(0, 0, 0, 0.5);
+  }*/
+}
+.l-container-bg {
+  width: 100vw;
+  height: 100vh;
+  display: none;
 }
 
 .l-wrapper {
@@ -271,8 +283,14 @@
   height: 6px;
   background: #707070;
   position: absolute;
-  top: 20px;
-  right: -50vw;
+  top: 25px;
+  right: -495%;
+  z-index: 50;
+}
+@media screen and (min-width: 769px) {
+  .p-menu__btn::before {
+    right: -516.666666666%;
+  }
 }
 
 .p-menu__btn::after {
@@ -283,14 +301,20 @@
   height: 6px;
   background: #707070;
   position: absolute;
-  top: 20px;
-  right: -50vw;
+  top: 25px;
+  right: -495%;
+  z-index: 50;
+}
+@media screen and (min-width: 769px) {
+  .p-menu__btn::after {
+    right: -516.666666666%;
+  }
 }
 
 .p-menu__btn span {
   visibility: hidden;
 }
-@media screen and (min-width: 835px) {
+@media screen and (min-width: 834px) {
   .p-menu__btn span {
     position: absolute;
     width: 20px;
@@ -311,7 +335,7 @@
 .p-menu__nav--title--burger {
   position: relative;
   margin-left: 46px;
-  margin-bottom: 477px;
+  margin-bottom: 441px;
   font-size: 24px;
   color: #707070;
   font-weight: bold;
@@ -319,7 +343,7 @@
 .p-menu__nav--title--side {
   position: relative;
   margin-left: 46px;
-  margin-bottom: 326px;
+  margin-bottom: 288px;
   font-size: 24px;
   color: #707070;
   font-weight: bold;
@@ -327,7 +351,7 @@
 .p-menu__nav--title--drink {
   position: relative;
   margin-left: 46px;
-  margin-bottom: 474px;
+  margin-bottom: 324px;
   font-size: 24px;
   color: #707070;
   font-weight: bold;
@@ -346,8 +370,13 @@
 
 .p-menu__nav--title {
   position: relative;
-  margin-left: 139px;
-  margin-bottom: 326px;
+  /*@include bp.mq-up(md) {
+      margin-left: 61.510791366vw;
+  }
+
+  @include bp.mq-up(pc) {
+      margin-left: 16.71875vw;
+  }*/
   /*&--title {
           @include fontset.sidebarNavtitle;
           position: absolute;
@@ -363,15 +392,22 @@
   position: absolute;
   top: 70px;
   left: 20px;
+  margin-bottom: 34px;
 }
 .p-menu__nav--title--burger--list ul {
   list-style: none;
 }
+.p-menu__nav--title--burger--list li {
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1040px) {
+  .p-menu__nav--title--burger--list {
+    margin-bottom: 40px;
+  }
+}
 
 .p-menu__nav--title {
   position: relative;
-  margin-left: 139px;
-  margin-bottom: 474px;
   /*&--title {
           @include fontset.sidebarNavtitle;
           position: absolute;
@@ -387,15 +423,22 @@
   position: absolute;
   top: 70px;
   left: 20px;
+  margin-bottom: 38px;
 }
 .p-menu__nav--title--side--list ul {
   list-style: none;
 }
+.p-menu__nav--title--side--list li {
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1040px) {
+  .p-menu__nav--title--side--list {
+    margin-bottom: 40px;
+  }
+}
 
 .p-menu__nav--title {
   position: relative;
-  margin-left: 139px;
-  margin-bottom: 474px;
   /*&--title {
           @include fontset.sidebarNavtitle;
           position: absolute;
@@ -414,5 +457,8 @@
 }
 .p-menu__nav--title--drink--list ul {
   list-style: none;
+}
+.p-menu__nav--title--drink--list li {
+  padding-bottom: 24px;
 }
 /*# sourceMappingURL=style.css.map */
