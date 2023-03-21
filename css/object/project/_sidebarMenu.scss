@@ -31,6 +31,7 @@
 }*/
 
 .p-menu__btn::before {
+    //バツボタンの一部
     transform: translate(-50%, -50%) rotate(45deg);
     display: inline-block;
     content: "";
@@ -48,6 +49,7 @@
 }
 
 .p-menu__btn::after {
+    //バツボタンの一部
     transform: translate(-50%, -50%) rotate(-45deg);
     display: inline-block;
     content: "";
@@ -83,6 +85,8 @@
 }
 
 .p-menu__nav {
+
+    //サイドバー各メニューのタイトル
     &--title {
         list-style: none;
 
@@ -145,6 +149,7 @@
         }*/
 
     &--burger--list {
+        //ハンバーガーのメニュー
         list-style: none;
         @include fontset.sidebarNavmenu;
         position: absolute;
@@ -180,6 +185,7 @@
         }*/
 
     &--side--list {
+        //サイドのメニュー
         list-style: none;
         @include fontset.sidebarNavmenu;
         position: absolute;
@@ -214,6 +220,7 @@
         }*/
 
     &--drink--list {
+        //ドリンクのメニュー
         list-style: none;
         @include fontset.sidebarNavmenu;
         position: absolute;
