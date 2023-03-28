@@ -1,0 +1,238 @@
+@use "../../foundation/mixin/_fontset" as fontset;
+@use "../../foundation/mixin/_breakpoint" as bp;
+
+.p-menu {
+    &__btn {
+        //margin-left: 24.8vw;
+        //margin-bottom: 297px;
+        //list-style: none;
+        padding-top: 82px;
+        width: 60px;
+        height: 60px;
+        position: relative;
+
+        @include bp.mq-up(pc) {
+            display: none;
+            padding-top: 82px;
+        }
+    }
+}
+
+/*.p-menu__btn ::before,
+::after {
+    content: "";
+    width: 32px;
+    height: 6px;
+    background: #707070;
+    position: absolute;
+    top: 20px;
+    right: -50vw;
+    //left: calc(50% - math.div(20px, 2));
+}*/
+
+.p-menu__btn::before {
+    //バツボタンの一部
+    transform: translate(-50%, -50%) rotate(45deg);
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 6px;
+    background: #707070;
+    position: absolute;
+    top: 25px;
+    right: -495%;
+    z-index: 50;
+
+    @include bp.mq-up(md) {
+        right: -516.666666666%;
+    }
+}
+
+.p-menu__btn::after {
+    //バツボタンの一部
+    transform: translate(-50%, -50%) rotate(-45deg);
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 6px;
+    background: #707070;
+    position: absolute;
+    top: 25px;
+    right: -495%;
+    z-index: 50;
+
+    @include bp.mq-up(md) {
+        right: -516.666666666%;
+    }
+}
+
+
+.p-menu__btn span {
+    visibility: hidden;
+
+    @include bp.mq-up(tab) {
+        position: absolute;
+        width: 20px;
+        height: 1px;
+        background: #707070;
+        display: none;
+    }
+
+    span {
+        @include fontset.sidebarTitle;
+        //visibility: hidden;
+    }
+}
+
+.p-menu__nav {
+
+    //サイドバー各メニューのタイトル
+    &--title {
+        list-style: none;
+
+        &--burger {
+            position: relative;
+            margin-left: 46px;
+            margin-bottom: 441px;
+            @include fontset.sidebarNavtitle
+        }
+
+        &--side {
+            position: relative;
+            margin-left: 46px;
+            margin-bottom: 288px;
+            @include fontset.sidebarNavtitle
+        }
+
+        &--drink {
+            position: relative;
+            margin-left: 46px;
+            margin-bottom: 324px;
+            @include fontset.sidebarNavtitle
+        }
+    }
+
+    &--list {
+        //@include fontset.sidebarNavmenu;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+
+        //list-style: none;
+        li {
+            list-style: none;
+            @include fontset.sidebarNavmenu;
+        }
+    }
+}
+
+.p-menu__nav--title {
+    position: relative;
+    //margin-left: 24.8vw;
+
+    /*@include bp.mq-up(md) {
+        margin-left: 61.510791366vw;
+    }
+
+    @include bp.mq-up(pc) {
+        margin-left: 16.71875vw;
+    }*/
+
+    //margin-bottom: 326px;
+
+
+    /*&--title {
+            @include fontset.sidebarNavtitle;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }*/
+
+    &--burger--list {
+        //ハンバーガーのメニュー
+        list-style: none;
+        @include fontset.sidebarNavmenu;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        margin-bottom: 34px;
+
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding-bottom: 24px;
+        }
+
+        @include bp.mq-up(pc) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.p-menu__nav--title {
+    position: relative;
+    //margin-left: 139px;
+    //margin-bottom: 474px;
+
+    /*&--title {
+            @include fontset.sidebarNavtitle;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }*/
+
+    &--side--list {
+        //サイドのメニュー
+        list-style: none;
+        @include fontset.sidebarNavmenu;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        margin-bottom: 38px;
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding-bottom: 24px;
+        }
+
+        @include bp.mq-up(pc) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.p-menu__nav--title {
+    position: relative;
+    //margin-left: 139px;
+    //margin-bottom: 474px;
+
+    /*&--title {
+            @include fontset.sidebarNavtitle;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }*/
+
+    &--drink--list {
+        //ドリンクのメニュー
+        list-style: none;
+        @include fontset.sidebarNavmenu;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding-bottom: 24px;
+        }
+    }
+}

@@ -1,9 +1,51 @@
+@use "../foundation/mixin/_fontset" as fontset;
+@use "../foundation/mixin/_breakpoint" as bp;
+
 .l-sidebar {
-    background-color: darkblue;
-    width: 30%;
+    //サイドバーのレイアウト
+    width: 95.1999vw;
+    //display: none;
+    position: absolute;
+    top: 0;
+    //left: 4.8vw;
+    background-color: #f2ede9;
+    //box-shadow: calc(100vw - 367px) 0px 0px 0px rgba(0, 0, 0, 0.5);
+    display: none;
+    right: 0;
+    height: 100vh;
+    z-index: 50;
+
+    @include bp.mq-up(sm) {
+        width: 367px;
+    }
+
+    /*@include bp.mq-up(md) {
+        box-shadow: -55.995263836vw 0px 0px 0px rgba(0, 0, 0, 0.5);
+    }*/
+
+    @include bp.mq-up(pc) {
+        left: auto;
+        right: 0;
+        box-shadow: none;
+        display: block;
+        width: 19.1145833333vw;
+    }
+
+
+
 
     &__inner {
-        background-color: darkseagreen;
-        width: 90%;
+
+        //background-color: #F2EDE9;
+        .l-sidebar__inner--menu {
+            @include bp.mq-up(tab) {
+                margin-top: 212px;
+            }
+        }
     }
+
+    /*&__inner::after {
+        background-color: #000;
+        width: 375px;
+    }*/
 }

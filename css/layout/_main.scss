@@ -1,14 +1,130 @@
+@use "../foundation/mixin/_fontset" as fontset;
+@use "../foundation/mixin/_breakpoint" as bp;
+
 .l-main {
-    background-color: coral;
-    width: 70%;
+    //ヘッダーを含むメイン部分のレイアウト
+    background-color: #fffdfa;
+    width: 100%;
 
     &-content {
-        background-color: cornflowerblue;
-        width: 70%;
+        @include bp.mq-up(pc) {
+            width: calc(100vw - 19.1666666vw);
+            display: contents;
+        }
     }
 
     &-header {
-        background-color: chartreuse;
-        width: 70%;
+        //ヘッダー部分
+        width: 100%;
+        height: 217px;
+        background-color: #fff7ef;
+
+        //@include bp.mq-up(sm) {}
+
+        @include bp.mq-up(pc) {
+            width: calc(100% - 19.1666666vw);
+            //display: contents;
+            //background-color: #fff7ef;
+        }
+
+        &__btn {
+            //ヘッダー右部分のMenuボタン
+            @include fontset.spheaderMenu;
+            padding-top: 14px;
+            margin-right: 4.266vw;
+            text-align: right;
+
+            @include bp.mq-up(pc) {
+                display: none;
+            }
+        }
+
+        &__contents {
+            text-align: center;
+            margin: 0 auto;
+
+            /*@include bp.mq-up(tab) {
+                display: flex;
+            }*/
+
+            @include bp.mq-up(pc) {
+                padding-top: 86px;
+                display: flex;
+            }
+
+            &--title {
+                //ヘッダーのタイトル
+                @include fontset.headerTitle;
+                padding-bottom: 38px;
+
+                @include bp.mq-up(md) {
+                    //@include fontset.headerTitle;
+                    font-size: clamp(2.5rem, 1.438rem + 2.14vw, 4rem);
+                }
+
+                @include bp.mq-up(pc) {
+                    margin-left: 4.18544752092vw;
+                    margin-top: -15px;
+
+                }
+            }
+
+            &--search {
+                //検索サーチエリア
+                max-width: 85.333vw;
+                height: 46px;
+                text-align: center;
+                margin: 0 auto;
+                padding-bottom: 44px;
+
+                @include bp.mq-up(sm) {
+                    max-width: 65.467vw;
+                    padding-bottom: 44px;
+                }
+
+                @include bp.mq-up(md) {
+                    padding-bottom: 38px;
+                }
+
+
+                @include bp.mq-up(pc) {
+                    width: 35.620915032679%;
+                    position: absolute;
+                    right: 20.7291666666vw;
+                }
+
+                form {
+                    display: flex;
+                }
+
+                &-box {
+                    //検索ワード入力部分
+                    background-color: #ffffff;
+                    width: 71.875%;
+                    border: solid #707070;
+                    border-radius: 10px;
+                    height: 46px;
+                    margin-right: 3.75%;
+
+                    @include bp.mq-up(sm) {
+                        margin-right: 2.7472527472527%;
+                        width: 72.527472527472%;
+                    }
+                }
+
+                &-btn {
+                    //検索ボタン
+                    width: 24.375%;
+                    background: linear-gradient(#f2ede9, #ded8d3);
+                    border: solid #707070;
+                    border-radius: 10px;
+                    height: 46px;
+
+                    @include bp.mq-up(sm) {
+                        width: 24.90842490842%;
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,4 +1,19 @@
+@use "../foundation/mixin/_fontset" as fontset;
+@use "../foundation/mixin/_breakpoint" as bp;
+
 .l-container {
-    background-color: bisque;
-    display: flex;
+    position: relative;
+
+    &-bg {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+    }
+
+    /*.open {
+        display: fixed;
+        opcity: 0.5;
+        z-index: 30;
+        background-color: rgba(0, 0, 0, 0.5);
+    }*/
 }

@@ -1,10 +1,15 @@
 @charset "UTF-8";
 
 // foundation------------------------------------------
-@forward "./foundation/index";
+@forward "./foundation/mixin/_fontset";
+@forward "./foundation/mixin/_breakpoint";
 
 // layout----------------------------------------------
-@use "./layout/index";
+@use "./layout/_footer";
+@use "./layout/_sidebar";
+@use "./layout/_main";
+@use "./layout/_container";
+@use "./layout/_wrapper";
 
 // object---------------------------------------------
-@forward "./object/index";
+@use "./object/_index";

@@ -1,0 +1,27 @@
+//mixin定義：media query
+@mixin mq-up($breakpoint: md) {
+    @media #{map-get($breakpoint-up, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin mq-down($breakpoint: md) {
+    @media #{map-get($breakpoint-down, $breakpoint)} {
+        @content;
+    }
+}
+
+//変数定義：breakpoint
+//min-width
+$breakpoint-up: (
+    "sm":"screen and (min-width: 375px)",
+    "md":"screen and (min-width: 769px)",
+    "tab":"screen and (min-width: 834px)",
+    "pc":"screen and (min-width: 1040px)"
+    ) !default;
+
+//man-width
+$breakpoint-down: (
+    "sm":"screen and (max-width: 374px)",
+    "md":"screen and (max-width: 768px)",
+    ) !default;
