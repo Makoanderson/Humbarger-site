@@ -1,0 +1,10 @@
+@use "../../foundation/mixin/_fontset" as fontset;
+@use "../../foundation/mixin/_breakpoint" as bp;
+
+.p-main {
+    &-mv {}
+
+    &-card {}
+
+    &-map {}
+}
