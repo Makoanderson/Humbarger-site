@@ -2,7 +2,11 @@
 @use "../../foundation/mixin/_breakpoint" as bp;
 
 .p-main {
-    &-mv {}
+    &-mv {
+        //メインビジュアル
+        background-image: url("../../../mainvisual-img/mainvisual-pc.jpg");
+        height: 285px;
+    }
 
     &-card {}
 
