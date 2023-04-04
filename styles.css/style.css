@@ -106,6 +106,9 @@
     box-shadow: none;
     display: block;
     width: 19.1145833333vw;
+    /*width: 100vh;*/
+    /*height: 100vw;
+    background-color: #f2ede9;*/
   }
 }
 @media screen and (min-width: 834px) {
@@ -230,6 +233,9 @@
   .l-main-header__contents--search-btn {
     width: 24.9084249084%;
   }
+}
+.l-main-body {
+  width: calc(100% - 19.1666666vw);
 }
 
 .l-container {
@@ -460,5 +466,14 @@
 }
 .p-menu__nav--title--drink--list li {
   padding-bottom: 24px;
+}
+
+.p-main {
+  /*width: calc(100% - 19.1666666vw);*/
+}
+.p-main-mv {
+  background-image: url("../../../mainvisual-img/mainvisual-pc.jpg");
+  height: 34.1274951706vw;
+  /*width: calc(100% - 19.1666666%);*/
 }
 /*# sourceMappingURL=style.css.map */
