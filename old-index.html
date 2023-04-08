@@ -1,0 +1,108 @@
+<!--Hamburger-site front-page-->
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,follow">
+    <title>Hamburger Site</title>
+    <meta name="description" content="最終課題のハンバーガーサイトです。">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+    <link href="styles.css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <wrapper class="l-wrapper">
+        <container class="l-container">
+            <div class="l-container-bg">
+            </div>
+            <main class="l-main-content"> <!--メイン部分-->
+                <header class="l-main-header"> <!--メイン内ヘッダー部分-->
+                    <div class="l-main-header__btn"> <!--メイン内ヘッダーボタン部分-->
+                        <p>Menu</p>
+                    </div>
+                    <section class="l-main-header__contents"> <!--メイン内ヘッダー部分--タイトル-->
+                        <h2 class="l-main-header__contents--title">
+                            Hamburger
+                        </h2>
+                        <div class="l-main-header__contents--search"> <!--メイン内ヘッダー部分--検索入力＆ボタン部分-->
+                            <form action="#" method="get">
+                                <input class="l-main-header__contents--search-box" type="search" name="search">
+                                <input class="l-main-header__contents--search-btn" type="submit" name="submit"
+                                    value="検索">
+                            </form>
+                        </div>
+                    </section>
+                </header>
+                <div class="l-main-body p-main">
+                    <section class="p-main-mv">
+                        <h1 class="p-main-mv__title"></h1>
+                    </section>
+                    <article class="p-main-card"></article>
+                    <section class="p-main-map"></section>
+                </div>
+            </main>
+            <aside class="l-sidebar"> <!--サイドバー部分-->
+                <div class="l-sidebar__inner p-menu"> <!--サイドバー部分--タイトル-->
+                    <button class="l-sidebar__inner--title p-menu__btn">
+                        <span>
+                            Menu
+                        </span>
+                    </button>
+                    <section class="l-sidebar__inner--menu p-menu__nav"> <!--サイドバー部分各種メニュー-->
+                        <ul class="p-menu__nav--title"> <!--サイドバー部分各種メニュータイトル-->
+                            <li class="p-menu__nav--title--burger">バーガー
+                                <ul class="p-menu__nav--title--burger--list"><!--サイドバー部分各種メニュー詳細-->
+                                    <li>ハンバーガー</li>
+                                    <li>チーズバーガー</li>
+                                    <li>テリヤキバーガー</li>
+                                    <li>アボガドバーガー</li>
+                                    <li>フィッシュバーガー</li>
+                                    <li>ベーコンバーガー</li>
+                                    <li>チキンバーガー</li>
+                                </ul>
+                            </li>
+                            <li class="p-menu__nav--title--side">サイド
+                                <ul class="p-menu__nav--title--side--list">
+                                    <li>ポテト</li>
+                                    <li>サラダ</li>
+                                    <li>ナゲット</li>
+                                    <li>コーン</li>
+                                </ul>
+                            </li>
+                            <li class="p-menu__nav--title--drink">ドリンク
+                                <ul class="p-menu__nav--title--drink--list">
+                                    <li>コーラ</li>
+                                    <li>ファンタ</li>
+                                    <li>オレンジ</li>
+                                    <li>アップル</li>
+                                    <li>紅茶（Ice/Hot）</li>
+                                    <li>コーヒー（Ice/Hot）</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </aside>
+        </container>
+        <footer class="l-footer"> <!--フッター部分-->
+            <div class="l-footer__inner">
+                <nav class="l-footer__inner--nav">
+                    <ul class="l-footer__inner--nav--list">
+                        <li><a href="#">ショップ情報</a></li>
+                        <li><a href="#">ヒストリー</a></li>
+                    </ul>
+                </nav>
+                <div class="l-footer__inner--copyright">
+                    <small>Copyright: RaiseTech</small>
+                </div>
+            </div>
+        </footer>
+    </wrapper>
+</body>
+
+</html>

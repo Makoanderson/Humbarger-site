@@ -120,6 +120,9 @@
 .l-main {
   background-color: #fffdfa;
   width: 100%;
+  /*&-body {
+      width: calc(100% - 19.1666666vw);
+  }*/
 }
 @media screen and (min-width: 1040px) {
   .l-main-content {
@@ -233,9 +236,6 @@
   .l-main-header__contents--search-btn {
     width: 24.9084249084%;
   }
-}
-.l-main-body {
-  width: calc(100% - 19.1666666vw);
 }
 
 .l-container {
